@@ -1,7 +1,9 @@
-import {useRef, useMemo, Suspense} from 'react'
+import { useMemo, Suspense} from 'react'
 import * as THREE from 'three'
-import { Canvas, useFrame, extend, useThree, useLoader } from '@react-three/fiber'
+import { Canvas, extend, useThree, useLoader } from '@react-three/fiber'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
+import Box from './components/Box'
+import ColorManager from './components/ColorManager'
 extend({OrbitControls})
 function App() {
 
@@ -12,26 +14,6 @@ function App() {
     )
   }
 
-  const Box = props =>{
-    const ref = useRef()
-    const texture = useLoader(THREE.TextureLoader, './wood.jpg')
-    useFrame(state=>{
-      ref.current.rotation.y += 0.01;
-    })
-    return(
-      <mesh
-        ref={ref}
-        {...props}
-        castShadow
-        receiveShadow
-      >
-        <sphereBufferGeometry args={[1,100,100]}/>
-        <meshPhysicalMaterial
-          map={texture}
-        />
-      </mesh>
-    )
-  }
 
   const Floor = props =>{
     return(
@@ -66,7 +48,7 @@ function App() {
         new THREE.WebGLCubeRenderTarget(
           texture.image.height
         ).fromEquirectangularTexture(gl, texture)
-      ,[])
+      ,[gl, texture])
 
     return (
       <primitive
@@ -78,19 +60,23 @@ function App() {
 
   return(
     <div style={{width: '100vw', height:'100vh'}}>
+      <ColorManager/>
       <Canvas
-        shadowMap
+        shadows
         style={{background:'black'}}
-        camera={{position:[3,3,3]}}
+        camera={{position:[7,7,7]}}
       >
-        <fog attach="fog" args={['white', 1, 10]}/>
+        <fog attach="fog" args={['white', 1, 50]}/>
         <ambientLight intensity={0.2}/>
 
         <Buld position={[0,3,0]}/>
         <Orbit/>
         <axesHelper args={[5]}/>
         <Suspense fallback={null}>
-          <Box position={[0,1,0]} />
+          <Box position={[-4,1,0]} />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Box position={[4,1,0]} />
         </Suspense>
         <Suspense fallback={null}>
           <Background />

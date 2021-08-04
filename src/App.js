@@ -71,7 +71,7 @@ function App() {
     return (
       <primitive
         attach='background'
-        object={formatted}
+        object={formatted.texture}
       />
     )
   }

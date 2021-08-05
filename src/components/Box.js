@@ -1,10 +1,11 @@
 import { useRef } from 'react'
 import {  useFrame, useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
+import { useBox } from '@react-three/cannon'
 
 
 const Box = props =>{
-  const ref = useRef()
+  const [ref, api] = useBox(()=>({mass:1,...props}))
   const texture = useLoader(THREE.TextureLoader, './wood.jpg')
   useFrame(state=>{
     ref.current.rotation.y += 0.01;
@@ -42,6 +43,7 @@ const Box = props =>{
 
       <mesh
         ref={ref}
+        api={api}
         {...props}
         castShadow
         receiveShadow

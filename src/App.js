@@ -8,6 +8,7 @@ import Floor from './components/Floor'
 import Orbit from './components/Orbit'
 import Buld from './components/Buld'
 import Dragable from './components/Dragable'
+import Model from './components/Model'
 
 
 function App() {
@@ -30,10 +31,16 @@ function App() {
         <Physics>
           <Dragable>
             <Suspense fallback={null}>
-              <Box position={[-4,1,0]} />
-            </Suspense>
-            <Suspense fallback={null}>
-              <Box position={[4,1,0]} />
+              <Model
+                path="/tesla_model_s/scene.gltf"
+                scale={new Array(3).fill(0.013)}
+                position={[4,0.2,0]}
+              />
+        {/*      <Model
+                path="/tesla_model_3/scene.gltf"
+                scale={new Array(3).fill(0.01)}
+                position={[-4,0.6,0]}
+              />*/}
             </Suspense>
           </Dragable>
 

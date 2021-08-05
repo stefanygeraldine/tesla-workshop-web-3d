@@ -39,20 +39,22 @@ const Box = props =>{
 
 
   return(
-    <mesh
-      ref={ref}
-      {...props}
-      castShadow
-      receiveShadow
-      onPointerDown={handledPointer}
-      onPointerEnter={handledPointerEnter}
-      onPointerLeave={handledPointerLeave}
-    >
-      <sphereBufferGeometry args={[1,100,100]}/>
-      <meshPhysicalMaterial
-        map={texture}
-      />
-    </mesh>
+
+      <mesh
+        ref={ref}
+        {...props}
+        castShadow
+        receiveShadow
+        onPointerDown={handledPointer}
+        onPointerEnter={handledPointerEnter}
+        onPointerLeave={handledPointerLeave}
+      >
+        <sphereBufferGeometry args={[1,100,100]}/>
+        <meshPhysicalMaterial
+          map={texture}
+        />
+      </mesh>
+
   )
 }
 

@@ -1,5 +1,5 @@
 {
-  "homepage":"https://stefanygeraldine.github.io/tesla-workshop-web-3d",
+  "homepage": "https://stefanygeraldine.github.io/tesla-workshop-web-3d",
   "name": "tesla-workshop-web-3d",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
+    "react-color": "^2.19.3",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "react-three-fiber": "^6.0.13",

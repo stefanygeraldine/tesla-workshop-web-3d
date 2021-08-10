@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/tesla-workshop-web-3d/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/tesla-workshop-web-3d/static/js/main.4e224a61.chunk.js",
-    "main.js.map": "/tesla-workshop-web-3d/static/js/main.4e224a61.chunk.js.map",
-    "runtime-main.js": "/tesla-workshop-web-3d/static/js/runtime-main.497b4604.js",
-    "runtime-main.js.map": "/tesla-workshop-web-3d/static/js/runtime-main.497b4604.js.map",
-    "static/js/2.dcf3b35b.chunk.js": "/tesla-workshop-web-3d/static/js/2.dcf3b35b.chunk.js",
-    "static/js/2.dcf3b35b.chunk.js.map": "/tesla-workshop-web-3d/static/js/2.dcf3b35b.chunk.js.map",
-    "static/js/3.561ad36f.chunk.js": "/tesla-workshop-web-3d/static/js/3.561ad36f.chunk.js",
-    "static/js/3.561ad36f.chunk.js.map": "/tesla-workshop-web-3d/static/js/3.561ad36f.chunk.js.map",
+    "main.js": "/tesla-workshop-web-3d/static/js/main.c7eafb20.chunk.js",
+    "main.js.map": "/tesla-workshop-web-3d/static/js/main.c7eafb20.chunk.js.map",
+    "runtime-main.js": "/tesla-workshop-web-3d/static/js/runtime-main.6b7228ad.js",
+    "runtime-main.js.map": "/tesla-workshop-web-3d/static/js/runtime-main.6b7228ad.js.map",
+    "static/js/2.fe88ab12.chunk.js": "/tesla-workshop-web-3d/static/js/2.fe88ab12.chunk.js",
+    "static/js/2.fe88ab12.chunk.js.map": "/tesla-workshop-web-3d/static/js/2.fe88ab12.chunk.js.map",
+    "static/js/3.7b5b3f96.chunk.js": "/tesla-workshop-web-3d/static/js/3.7b5b3f96.chunk.js",
+    "static/js/3.7b5b3f96.chunk.js.map": "/tesla-workshop-web-3d/static/js/3.7b5b3f96.chunk.js.map",
     "index.html": "/tesla-workshop-web-3d/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/tesla-workshop-web-3d/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.dcf3b35b.chunk.js.LICENSE.txt": "/tesla-workshop-web-3d/static/js/2.dcf3b35b.chunk.js.LICENSE.txt"
+    "static/js/2.fe88ab12.chunk.js.LICENSE.txt": "/tesla-workshop-web-3d/static/js/2.fe88ab12.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.497b4604.js",
-    "static/js/2.dcf3b35b.chunk.js",
+    "static/js/runtime-main.6b7228ad.js",
+    "static/js/2.fe88ab12.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.4e224a61.chunk.js"
+    "static/js/main.c7eafb20.chunk.js"
   ]
 }

@@ -35,7 +35,7 @@ const ColorManage = () => {
   return (
     <div style={styles.contentColors}>
       <h1>Selecciona un Color</h1>
-      <div>
+      <div style={{marginBottom:20}}>
         <HuePicker
           color={ color }
           onChangeComplete={ handledClick }
